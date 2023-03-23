@@ -1,7 +1,7 @@
 module.exports = {
-  HOST: "TO_FILL",
-  USER: "TO_FILL",
-  PASSWORD: "TO_FILL",
-  DATABASE: "TO_FILL",
-  PORT: "TO_FILL",
+  HOST: "TO_MODIFY",
+  USER: "TO_MODIFY",
+  PASSWORD: "TO_MODIFY",
+  DATABASE: "TO_MODIFY",
+  PORT: "TO_MODIFY",
 };

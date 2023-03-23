@@ -1,13 +1,13 @@
 import axios from "axios";
 
 export const getTodos = async () => {
-  //TO_FILL
+  //TO_MODIFY
 };
 
 export const createTodo = async (formData) => {
-  //TO_FILL
+  //TO_MODIFY
 };
 
 export const deleteTodo = async (todoId) => {
-  //TO_FILL
+  //TO_MODIFY
 };
