@@ -6,6 +6,8 @@ services:
             - "./backend/src:/usr/src/app/src"
         ports:
             - "4001:4001"
+        env_file:
+            - .env
     frontend:
         build: "./frontend"
         volumes:
@@ -17,7 +19,9 @@ services:
         image: mysql
         restart: always
         environment:
-            MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: app
-            MYSQL_USER: user
-            MYSQL_PASSWORD: password
+            MYSQL_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWORD}
+            MYSQL_DATABASE: ${DATABASE_NAME}
+            MYSQL_USER: ${DATABASE_USER}
+            MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+        ports:
+            - 3306:${DATABASE_PORT}
