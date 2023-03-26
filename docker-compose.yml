@@ -1,1 +1,8 @@
-#TO_MODIFY
+version: "3.9"
+services:
+    backend:
+        build: "./backend"
+        volumes:
+            - "./backend/src:/usr/src/app/src"
+        ports:
+            - "4001:4001"

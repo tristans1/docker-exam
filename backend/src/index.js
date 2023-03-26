@@ -1,5 +1,5 @@
 const express = require("express");
-const config = require("./db.config");
+const config = require("../db.config");
 
 const db = require("knex")({
   client: "mysql2",
@@ -15,7 +15,7 @@ const db = require("knex")({
 const cors = require("cors");
 const app = express();
 
-const port = //TO_MODIFY
+const port = 4001
 app.use(express.json());
 app.use(cors());
 
