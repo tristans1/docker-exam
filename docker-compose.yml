@@ -6,3 +6,11 @@ services:
             - "./backend/src:/usr/src/app/src"
         ports:
             - "4001:4001"
+    db:
+        image: mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: app
+            MYSQL_USER: user
+            MYSQL_PASSWORD: password
